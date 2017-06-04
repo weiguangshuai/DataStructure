@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8854b04-89a2-44a5-9bcd-69fdc1f8ae9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com.cqupt.weigs/tree/BinaryTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,11 +93,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoopQueue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoopQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com.cqupt.weigs/StackAndQueue/LoopQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.cqupt.weigs/tree/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -152,6 +163,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/cqupt/weigs/StackAndQueue/ArrayQueueTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cqupt.weigs/StackAndQueue/LinkQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cqupt.weigs/StackAndQueue/LoopQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cqupt.weigs/tree/BinaryTree.java" />
       </list>
     </option>
   </component>
@@ -195,7 +207,9 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -841,7 +855,7 @@
       <workItem from="1495981296105" duration="70000" />
       <workItem from="1496452750826" duration="2497000" />
       <workItem from="1496475144516" duration="10339000" />
-      <workItem from="1496543635188" duration="40000" />
+      <workItem from="1496543635188" duration="634000" />
     </task>
     <servers />
   </component>
@@ -863,7 +877,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20315000" />
+    <option name="totallyTimeSpent" value="20909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1320,6 +1334,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cqupt.weigs/tree/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding />
         </state>
       </provider>
