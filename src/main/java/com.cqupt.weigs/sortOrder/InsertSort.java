@@ -10,8 +10,7 @@ import org.apache.log4j.Logger;
  * @author weigs
  * @date 2017/6/29 0029
  */
-public class InsertSort {
-    static Logger logger = Logger.getLogger(InsertSort.class);
+public class InsertSort {  
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 45, 6, 34, 32, 2, 1, 1};
         for (int i : a) {
@@ -27,14 +26,7 @@ public class InsertSort {
             System.out.print(i + " ");
         }
 
-        BasicConfigurator.configure();;
-        logger.setLevel(Level.DEBUG);
-        logger.trace("跟踪信息");
-        logger.debug("调试信息");
-        logger.info("输出信息");
-        logger.warn("警告信息");
-        logger.error("错误信息");
-        logger.fatal("致命信息");
+    
     }
 
     public void insertSort(int[] a) {
