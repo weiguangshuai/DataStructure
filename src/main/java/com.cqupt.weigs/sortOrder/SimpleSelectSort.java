@@ -1,7 +1,5 @@
 package com.cqupt.weigs.sortOrder;
 
-import java.text.SimpleDateFormat;
-
 /**
  * 简单选择排序
  *
@@ -43,5 +41,31 @@ public class SimpleSelectSort {
         a[i] = a[i] + a[k];
         a[k] = a[i] - a[k];
         a[i] = a[i] - a[k];
+    }
+
+    //二元选择排序，对简单选择排序的改进
+    private void binarySelectSort(int[] a, int n) {
+        int i, j, min, max, tmp;
+        for (i = 1; i <= n / 2; i++) {
+            //做不超过n/2趟选择排序
+            min = i;
+            max = i;//分别记录最大和最小关键字记录位置
+            for (j = i + 1; j <= n - i; j++) {
+                if (a[j] > a[max]) {
+                    max = j;
+                    continue;
+                }
+                if (a[j] < a[min]) {
+                    min = j;
+                }
+            }
+            //该交换操作还可分情况讨论以提高效率
+            tmp = a[i - 1];
+            a[i - 1] = a[min];
+            a[min] = tmp;
+            tmp = a[n - i];
+            a[n - i] = a[max];
+            a[max] = tmp;
+        }
     }
 }

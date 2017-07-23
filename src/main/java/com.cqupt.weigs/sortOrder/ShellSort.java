@@ -1,8 +1,6 @@
 package com.cqupt.weigs.sortOrder;
 
 
-import java.util.Random;
-
 /**
  * 希尔排序
  *
