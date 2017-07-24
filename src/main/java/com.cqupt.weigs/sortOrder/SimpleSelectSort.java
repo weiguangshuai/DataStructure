@@ -34,6 +34,12 @@ public class SimpleSelectSort {
         }
     }
 
+    private static void selectSort2(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+
+        }
+    }
+
     private void swap(int[] a, int k, int i) {
         if (i == k) {
             return;
