@@ -1,5 +1,6 @@
 package com.cqupt.weigs.sortOrder;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -11,6 +12,7 @@ import java.util.Random;
 public class BubbleSort {
 
     public static void main(String[] args) {
+        /*
         int[] a = new int[100000];
         Random random = new Random();
         for (int i = 0; i < 100000; i++) {
@@ -24,6 +26,10 @@ public class BubbleSort {
         }
         System.out.println();
         System.out.println(end - begin);
+        */
+        int a[] = {1, 23, 4, 5, 22, 7, 9, 4, 45, 34, 34};
+        bubblesort2(a);
+        System.out.println(Arrays.toString(a));
     }
 
     //冒泡排序相当于是每次遍历将遍历的数中最大的放在最小面，第一次遍历n-1次，
@@ -35,6 +41,18 @@ public class BubbleSort {
                     a[j] = a[j] + a[j + 1];
                     a[j + 1] = a[j] - a[j + 1];
                     a[j] = a[j] - a[j + 1];
+                }
+            }
+        }
+    }
+
+    public static void bubblesort2(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = a.length - 1; j > i; j--) {
+                if (a[j] < a[j - 1]) {
+                    int tmp = a[j];
+                    a[j] = a[j - 1];
+                    a[j - 1] = tmp;
                 }
             }
         }

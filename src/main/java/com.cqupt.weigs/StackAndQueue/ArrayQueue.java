@@ -1,6 +1,5 @@
 package com.cqupt.weigs.StackAndQueue;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**

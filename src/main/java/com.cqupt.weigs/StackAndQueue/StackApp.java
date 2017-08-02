@@ -13,6 +13,7 @@ public class StackApp {
 
     /**
      * 中缀表达式转后缀
+     *
      * @param expstr
      * @return
      */
@@ -32,7 +33,7 @@ public class StackApp {
                         postfix += stack.pop();
                     }
                     //入栈
-                    stack.push(ch+"");
+                    stack.push(ch + "");
                     i++;
                     break;
                 case '*':
@@ -42,13 +43,13 @@ public class StackApp {
                         postfix += stack.pop();
 
                     }
-                    stack.push(ch+"");
+                    stack.push(ch + "");
                     i++;
                     break;
 
                 case '(':
                     //左括号直接入栈
-                    stack.push(ch+"");
+                    stack.push(ch + "");
                     i++;
                     break;
 
@@ -67,11 +68,11 @@ public class StackApp {
                         if (i < expstr.length()) {
                             ch = expstr.charAt(i);
                         } else {
-                            ch='=';
+                            ch = '=';
                         }
                     }
                     //分隔符
-                    postfix +="";
+                    postfix += "";
                     break;
 
             }

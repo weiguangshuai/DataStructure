@@ -2,6 +2,7 @@ package com.cqupt.weigs.sortOrder;
 
 /**
  * 快速排序
+ *
  * @author weigs
  * @date 2017/7/3 0003
  */
@@ -13,6 +14,29 @@ public class QuickSort {
         for (int i : a) {
             System.out.print(i + " ");
         }
+    }
+
+    public static void quickSort2(int[] a, int low, int high) {
+        if (low < high) {
+            int middle = getMiddle(a, 0, a.length);
+            quickSort2(a, 1, middle - 1);
+            quickSort2(a, middle + 1, high);
+        }
+    }
+
+    public static int getIndex(int[] a, int low, int high) {
+        int key = a[low];
+        while (low < high) {
+            while (low < high && a[high] >= key) {
+                high--;
+            }
+            a[low] = a[high];
+            while (low < high && a[low] >= key)
+                low++;
+            a[high] = a[low];
+        }
+        a[low] = key;
+        return low;
     }
 
     public static void quickSort(int[] a, int low, int high) {

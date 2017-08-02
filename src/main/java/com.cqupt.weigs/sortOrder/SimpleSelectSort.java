@@ -1,5 +1,7 @@
 package com.cqupt.weigs.sortOrder;
 
+import java.util.Random;
+
 /**
  * 简单选择排序
  *
@@ -9,6 +11,7 @@ package com.cqupt.weigs.sortOrder;
 public class SimpleSelectSort {
 
     public static void main(String[] args) {
+        /*
         int a[] = {1, 23, 5, 6, 34, 34, 54, 3, 3, 2, 5, 46, 6755, 23};
         SimpleSelectSort simpleSelectSort = new SimpleSelectSort();
         System.out.println("初始值:");
@@ -20,9 +23,19 @@ public class SimpleSelectSort {
         for (int i : a) {
             System.out.print(i + " ");
         }
+        */
+        int[] a = new int[100000];
+        Random random = new Random();
+        for (int i = 0; i < 100000; i++) {
+            a[i] = random.nextInt();
+        }
+        long begin = System.currentTimeMillis();
+        selectSort(a);
+        long end = System.currentTimeMillis();
+        System.out.println("消耗时间为：" + (end - begin));
     }
 
-    private void selectSort(int[] a) {
+    private static void selectSort(int[] a) {
         for (int i = 0; i < a.length; i++) {
             int k = i;//k存放最小值下标，每次循环最小值加1
             for (int j = i + 1; j < a.length; j++) {
@@ -34,13 +47,8 @@ public class SimpleSelectSort {
         }
     }
 
-    private static void selectSort2(int[] a) {
-        for (int i = 0; i < a.length; i++) {
 
-        }
-    }
-
-    private void swap(int[] a, int k, int i) {
+    private static void swap(int[] a, int k, int i) {
         if (i == k) {
             return;
         }
